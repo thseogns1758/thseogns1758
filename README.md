@@ -36,6 +36,17 @@ React, TypeScript 기반의 프론트엔드 개발자입니다.
 
 ---
 
+### 🚀 Side Project
+
+#### [CoverCloud - 커버 공유 플랫폼](https://covercloud.kr/main)
+음악 커버 영상을 올리고 공유하는 플랫폼입니다.
+
+- **Tech Stack:** Next.js, TypeScript, Firebase
+- **주요 기능:** K-POP / J-POP / POP 카테고리 필터링, 게시글 등록, 좋아요
+- **링크:** [https://covercloud.kr](https://covercloud.kr/main)
+
+---
+
 ### 📌 Experience
 
 | 기간 | 회사 | 역할 |
