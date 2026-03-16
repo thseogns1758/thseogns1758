@@ -16,6 +16,7 @@ React, TypeScript 기반의 프론트엔드 개발자입니다.
 **Styling**  
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![MUI](https://img.shields.io/badge/MUI-007FFF?style=flat-square&logo=mui&logoColor=white)
 
 **State Management**  
 ![Zustand](https://img.shields.io/badge/Zustand-433E38?style=flat-square&logo=react&logoColor=white)
@@ -38,12 +39,27 @@ React, TypeScript 기반의 프론트엔드 개발자입니다.
 
 ### 🚀 Side Project
 
-#### [CoverCloud - 커버 공유 플랫폼](https://covercloud.kr/main)
-음악 커버 영상을 올리고 공유하는 플랫폼입니다.
+#### [CoverCloud — 커버 영상 공유 플랫폼](https://covercloud.kr/main)
 
-- **Tech Stack:** Next.js, TypeScript, Firebase
-- **주요 기능:** K-POP / J-POP / POP 카테고리 필터링, 게시글 등록, 좋아요
-- **링크:** [https://covercloud.kr](https://covercloud.kr/main)
+Spotify API 기반의 음악 커버 영상 공유 커뮤니티입니다.  
+유튜브, 틱톡, 사운드클라우드의 커버 영상을 공유하고, 좋아요와 댓글로 소통할 수 있습니다.
+
+| 항목 | 내용 |
+|------|------|
+| 🔗 서비스 | [covercloud.kr](https://covercloud.kr/main) |
+| 📌 기간 | 2025~ (개발 중) |
+| 👤 역할 | 프론트엔드 전체 담당 (1인) |
+| 👥 팀 구성 | FE 1 + BE 1 + 기획 1 + 디자인 1 |
+| 🛠 기술 | Next.js, TypeScript, Zustand, React Query, Tailwind CSS, MUI |
+
+**담당 기능**
+- **인증 구조 설계** — Refresh Token은 HttpOnly 쿠키, Access Token은 Authorization 헤더 전송. Access Token을 Zustand로 메모리 상에서만 관리하여 보안 강화
+- **Spotify API 연동** — 음악 검색 기능 구현, 게시글 작성 시 Spotify 트랙 연결
+- **동영상 URL 검증 및 임베드** — 유튜브/틱톡/사운드클라우드 URL 파싱 후 동영상 변환. 허용되지 않은 URL 등록 차단
+- **게시글 CRUD + 검색/필터링** — 등록, 수정, 삭제 전체 플로우 및 카테고리별 필터링
+- **좋아요 / 댓글 / 대댓글** — useMutation + invalidateQueries로 새로고침 없이 실시간 반영
+- **사용자 프로필** — 계정 이름 및 프로필 사진 변경
+- **반응형 레이아웃** — 모바일/태블릿/데스크톱 대응
 
 ---
 
